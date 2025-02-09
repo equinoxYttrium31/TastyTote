@@ -1,0 +1,12 @@
+{
+	"links": {
+		"home": "Home",
+		"about": "About",
+		"contact-us": "Contact Us"
+	},
+
+	"Login": "Login",
+	"hero-header": "HOME-COOKED MEALS, SMART SHOPPING!",
+	"hero-subtext": "Get a list of ingredients, estimated prices, and delicious recipes all in one place.",
+	"CTA-btn": "Cook Now"
+}

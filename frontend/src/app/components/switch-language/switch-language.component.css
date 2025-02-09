@@ -1,0 +1,18 @@
+.switch-lang{
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  background-color: var(--accent-color-1);
+  color: var(--text-color);
+  transition: all .1s ease-in;
+}
+
+.switch-lang:focus{
+  outline: none;
+}
+
+.switch-lang:hover{
+  cursor: pointer;
+  background-color: var(--accent-color-2);
+  box-shadow: 2px 2px 5px var(--accent-color-1);
+}

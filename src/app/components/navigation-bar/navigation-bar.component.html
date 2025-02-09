@@ -1,0 +1,39 @@
+<div class="navbar-main-container">
+  <div class="navbar-logo-container">
+    <img [src]="logoPath" class="navbar-img-logo" alt="TastyTote Logo">
+    <h1 class="navbar-text-logo">TastyTote</h1>
+  </div>
+
+  <div class="navbar-hamburger-container" (click)="toggleLinks()">
+    <div class="hamburger-btn" [class.active]="isNavbarOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="navbar-links-container" [class.active]="isNavbarOpen">
+    <ul id="navbarlinks">
+      <li>
+        <a class="navbar-item" routerLink="/" translate>links.home</a>  <!-- Correct translation usage -->
+      </li>
+      <li>
+        <a class="navbar-item" routerLink="/about" translate>links.about</a>
+      </li>
+      <li>
+        <a class="navbar-item" routerLink="/contact" translate>links.contact-us</a>
+      </li>
+      <li><app-theme-switcher></app-theme-switcher></li>
+      <li>
+        <app-switch-language></app-switch-language>
+      </li>
+      <li class="navbar-login-mobile">
+        <button class="btn-dark" translate>Login</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="navbar-login-container">
+    <button class="btn-dark" translate>Login</button>
+  </div>
+</div>

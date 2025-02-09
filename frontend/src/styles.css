@@ -1,0 +1,76 @@
+/*Imported Fonts*/
+/*Cormorant Garamond && Proza Libre*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/*Theme Settings*/
+:root{
+  --background-color: #1A1A19;
+  --accent-color-1: #31511E;
+  --accent-color-2: #859F3D;
+  --text-color: #F6FCDF;
+  --text-shadow: #1A1A19;
+}
+
+.light-mode{
+  --background-color: #F6FCDF;
+  --accent-color-1: #A7D07E;
+  --accent-color-2: #4E6E3E;
+  --text-color: #1A1A19;
+  --text-shadow: #F6FCDF;
+}
+
+
+/*Global Styling*/
+h1{
+  font-family: Cormorant Garamond;
+  font-weight: 700;
+  color: var(--accent-color-2);
+
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Proza Libre;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.btn-dark{
+  all: unset;
+  padding: .5rem 2rem;
+  background-color: var(--accent-color-1);
+  border-radius: .5rem;
+  transition: all .1s ease-in;
+}
+
+.btn-light{
+  all: unset;
+  padding: .5rem 2rem;
+  background-color: var(--accent-color-2);
+  border-radius: .5rem;
+  transition: all .1s ease-in;
+}
+
+
+
+
+
+
+
+
+
+/*Hover Effects*/
+.btn-dark:hover{
+  cursor: pointer;
+  background-color: var(--accent-color-2);
+  box-shadow: 2px 2px 5px var(--accent-color-1);
+}
+
+.btn-light:hover{
+  cursor: pointer;
+  background-color: var(--accent-color-1);
+  box-shadow: 2px 2px 5px var(--accent-color-2);
+}
+
